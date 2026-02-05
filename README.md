@@ -60,6 +60,7 @@ Sav programski kod je pisan u Arduino IDE razvojnom okruženju,
 koje pruža podršku za programski jezik C/C++,
 alate za kompajliranje i učitavanje programa na mikroupravljač te serijski monitor za praćenje rada sustava i ispis dijagnostičkih informacija.
 Kod za MASTER: 
+
 #include <Wire.h>
 
 /* Definicija pinova i varijabli */
@@ -118,8 +119,6 @@ void PosaljiUdaljenost(float udaljenost)
   Wire.endTransmission();
 }
 KOD ZA SLAVE 
-// C++ code
-// SLAVE
 
 #include <LiquidCrystal.h>
 #include <Wire.h>
