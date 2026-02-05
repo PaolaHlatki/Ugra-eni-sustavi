@@ -1,11 +1,14 @@
 # Ugradeni-sustavi
 Uvod
+
 Razvoj sustava za pomoć pri parkiranju vozila ima važnu ulogu u povećanju sigurnosti i
 preciznosti manevriranja u ograničenim prostorima. Cilj ovog projekta je izrada jednostavnog
 parking senzora koji korisniku omogućuje procjenu udaljenosti vozila od prepreke bez potrebe
 stalnog gledanja u zaslon. Sustav koristi kombinaciju zvučnog i vizualnog upozorenja kako bi
 vozaču pružio jasnu i pravovremenu informaciju.
+
 Opis sustava
+
 Sustav se sastoji od dva Arduino Nano mikroupravljača koji međusobno komuniciraju putem I2C
 sabirnice. Prvi Arduino Nano (MASTER) povezan je s ultrazvučnim senzorom HC-SR04 te služi za
 mjerenje udaljenosti između vozila i prepreke. Izmjerena udaljenost pretvara se u numeričku
@@ -16,8 +19,11 @@ Logika sustava temelji se na kontinuiranom mjerenju udaljenosti. Ako je udaljeno
 definirane granice, sustav povećava učestalost zvučnog signala. Kako se vozilo približava
 prepreci, interval između zvučnih upozorenja se smanjuje, čime se korisniku jasno signalizira
 opasnost od sudara.
+
 Tehničke specifikacije
+
 Hardver
+
 1. Arduino Nano (2 komada)
 Arduino Nano je mikrokontrolerska razvojna pločica temeljena na mikrokontroleru ATmega328P.
 Koristi se za upravljanje senzorima, obradbu podataka i upravljanje izlaznim uređajima.
@@ -56,9 +62,11 @@ USB kabel se koristi za napajanje Arduino Nano pločice i za prijenos programa s
 Također omogućuje serijsku komunikaciju za praćenje rada sustava.
 
 Programski kod sustava
+
 Sav programski kod je pisan u Arduino IDE razvojnom okruženju, 
 koje pruža podršku za programski jezik C/C++,
 alate za kompajliranje i učitavanje programa na mikroupravljač te serijski monitor za praćenje rada sustava i ispis dijagnostičkih informacija.
+
 Kod za MASTER: 
 
 #include <Wire.h>
