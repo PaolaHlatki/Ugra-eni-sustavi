@@ -219,4 +219,9 @@ void OglasiPiezo(float udaljenost)
     svira = false;
   }
 }
-
+LITERATURA: 
+https://docs.arduino.cc/hardware/nano
+https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard
+https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf
+https://www.sparkfun.com/datasheets/LCD/HD44780.pdf
+https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/resistors/
